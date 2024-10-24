@@ -19,4 +19,3 @@ async def start_handler(message: types.Message):
 def register_handlers(dp: Dispatcher):
     dp.register_message_handler(start_handler, commands=['start'])
 
-

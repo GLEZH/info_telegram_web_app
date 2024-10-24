@@ -1,0 +1,8 @@
+aiogram
+aiogram_dialog
+asyncpg
+SQLAlchemy
+alembic
+sqlalchemy-admin
+aiohttp
+jinja2

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личная карточка</title>
+</head>
+<body>
+    {% if error %}
+        <h1>{{ error }}</h1>
+    {% else %}
+        <h1>Личная карточка</h1>
+        <img src="{{ person.photo }}" alt="Фото">
+        <p><strong>ФИО:</strong> {{ person.full_name }}</p>
+        <p><strong>Никнейм:</strong> {{ person.tg_nickname }}</p>
+        <p><strong>Дата рождения:</strong> {{ person.birth_date }}</p>
+        <p><strong>Страна:</strong> {{ person.country }}</p>
+        <p><strong>Язык:</strong> {{ person.language }}</p>
+        <p><strong>Первичные документы:</strong> {{ person.primary_docs }}</p>
+        <p><strong>Вторичные документы:</strong> {{ person.secondary_docs }}</p>
+    {% endif %}
+</body>
+</html>
